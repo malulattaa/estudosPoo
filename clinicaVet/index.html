@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Clínica Veterinária</title>
+</head>
+<body>
+
+<h2>Cadastrar Animal</h2>
+<input id="nome" placeholder="Nome">
+<input id="tipo" placeholder="Cachorro / Gato">
+<button onclick="cadastrarAnimal()">Cadastrar</button>
+
+<h2>Entrada</h2>
+<input id="nomeEntrada" placeholder="Nome do animal">
+<button onclick="registrarEntrada()">Registrar Entrada</button>
+
+<h2>Saída</h2>
+<input id="nomeSaida" placeholder="Nome do animal">
+<button onclick="registrarSaida()">Registrar Saída</button>
+
+<h2>Relatórios</h2>
+<button onclick="listarAtuais()">Animais em atendimento</button>
+<button onclick="listarHistorico()">Histórico</button>
+
+<pre id="saida"></pre>
+
+<script src="clinica.js"></script>
+</body>
+</html>

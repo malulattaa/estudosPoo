@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca</title>
+</head>
+<body>
+
+<h2>Cadastrar Item</h2>
+<input type="text" id="codigo" placeholder="Código"><br>
+<input type="text" id="titulo" placeholder="Título"><br>
+
+<select id="tipo">
+    <option value="livro">Livro</option>
+    <option value="revista">Revista</option>
+    <option value="dvd">DVD</option>
+</select><br>
+
+<input type="text" id="extra" placeholder="Autor / Edição / Duração"><br>
+<button onclick="cadastrarItem()">Cadastrar</button>
+
+<hr>
+
+<h2>Empréstimo</h2>
+<input type="text" id="codigoEmprestimo" placeholder="Código do item"><br>
+<button onclick="registrarEmprestimo()">Emprestar</button>
+
+<h2>Devolução</h2>
+<input type="text" id="codigoDevolucao" placeholder="Código do item"><br>
+<button onclick="registrarDevolucao()">Devolver</button>
+
+<hr>
+
+<button onclick="listarEmprestados()">Listar Emprestados</button>
+<button onclick="listarHistorico()">Listar Histórico</button>
+
+<pre id="saida"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>

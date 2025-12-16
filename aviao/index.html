@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Avião</title></head>
+<body>
+
+<input id="codigo" placeholder="Código voo">
+<input id="tipo" placeholder="Comercial / Carga">
+<button onclick="cadastrarVoo()">Cadastrar</button>
+
+<input id="codigoEntrada" placeholder="Voo">
+<button onclick="decolar()">Decolar</button>
+
+<input id="codigoSaida" placeholder="Voo">
+<button onclick="pousar()">Pousar</button>
+
+<button onclick="listarAtivos()">Voos ativos</button>
+<button onclick="listarHistorico()">Histórico</button>
+
+<pre id="saida"></pre>
+
+<script src="aviao.js"></script>
+</body>
+</html>
