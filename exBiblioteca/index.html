@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Biblioteca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        input, button {
+            margin: 5px 0;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Biblioteca</h1>
+
+    <!-- CADASTRO DE LIVRO -->
+    <section>
+        <h2>Cadastrar Livro</h2>
+        <input type="text" id="titulo" placeholder="Título"><br>
+        <input type="text" id="autor" placeholder="Autor"><br>
+        <input type="text" id="codigo" placeholder="Código do livro"><br>
+        <button onclick="cadastrarLivro()">Cadastrar Livro</button>
+    </section>
+
+    <!-- EMPRÉSTIMO -->
+    <section>
+        <h2>Emprestar Livro</h2>
+        <input type="text" id="codigoEmprestimo" placeholder="Código do livro"><br>
+        <button onclick="emprestarLivro()">Emprestar</button>
+    </section>
+
+    <!-- DEVOLUÇÃO -->
+    <section>
+        <h2>Devolver Livro</h2>
+        <input type="text" id="codigoDevolucao" placeholder="Código do livro"><br>
+        <button onclick="devolverLivro()">Devolver</button>
+    </section>
+
+    <!-- RELATÓRIOS -->
+    <section>
+        <h2>Relatórios</h2>
+        <button onclick="listarDisponiveis()">Listar Livros Disponíveis</button>
+        <button onclick="listarHistorico()">Listar Histórico</button>
+        <pre id="saida"></pre>
+    </section>
+
+    <script src="func.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Academia</title>
+</head>
+<body>
+
+    <h1>🏋️ Controle de Academia</h1>
+
+    <h2>Cadastro de Aluno</h2>
+    <input type="text" id="matricula" placeholder="Matrícula">
+    <input type="text" id="nome" placeholder="Nome">
+    <select id="plano">
+        <option value="mensal">Mensal</option>
+        <option value="trimestral">Trimestral</option>
+        <option value="anual">Anual</option>
+    </select>
+    <button onclick="cadastrarAluno()">Cadastrar</button>
+
+    <hr>
+
+    <h2>Entrada do Aluno</h2>
+    <input type="text" id="matriculaEntrada" placeholder="Matrícula">
+    <button onclick="registrarEntrada()">Registrar Entrada</button>
+
+    <hr>
+
+    <h2>Saída do Aluno</h2>
+    <input type="text" id="matriculaSaida" placeholder="Matrícula">
+    <button onclick="registrarSaida()">Registrar Saída</button>
+
+    <hr>
+
+    <button onclick="listarAtuais()">Listar Alunos Treinando</button>
+    <button onclick="listarHistorico()">Listar Histórico</button>
+
+    <div id="saida"></div>
+
+    <script src="acad.js"></script>
+</body>
+</html>

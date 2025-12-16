@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Banco</title>
+</head>
+<body>
+
+<h2>Cadastrar Conta</h2>
+<input id="nome" placeholder="Nome"><br>
+<input id="numero" placeholder="Número"><br>
+<select id="tipo">
+    <option value="corrente">Corrente</option>
+    <option value="poupanca">Poupança</option>
+</select><br>
+<button onclick="cadastrarCliente()">Cadastrar</button>
+
+<h2>Movimentação</h2>
+<input id="numeroMov" placeholder="Número conta"><br>
+<input id="valor" placeholder="Valor"><br>
+<button onclick="depositar()">Depositar</button>
+<button onclick="sacar()">Sacar</button>
+
+<h2>Relatórios</h2>
+<button onclick="listarContas()">Contas Ativas</button>
+<button onclick="listarHistorico()">Histórico</button>
+
+<pre id="saida"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>

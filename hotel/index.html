@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel</title>
+</head>
+<body>
+
+<h2>Cadastrar hóspede</h2>
+<input type="text" id="documento" placeholder="Documento"><br>
+<input type="text" id="nome" placeholder="Nome"><br>
+
+<select id="tipo">
+    <option value="simples">Simples</option>
+    <option value="premium">Premium</option>
+    <option value="vip">VIP</option>
+</select><br>
+
+<button onclick="cadastrarHospede()">Cadastrar</button>
+
+<hr>
+
+<h2>Check-in</h2>
+<input type="text" id="docEntrada" placeholder="Documento">
+<button onclick="registrarEntrada()">Entrar</button>
+
+<h2>Check-out</h2>
+<input type="text" id="docSaida" placeholder="Documento">
+<button onclick="registrarSaida()">Sair</button>
+
+<hr>
+
+<button onclick="listarAtuais()">Listar Hospedados</button>
+<button onclick="listarHistorico()">Listar Histórico</button>
+
+<div id="saida"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

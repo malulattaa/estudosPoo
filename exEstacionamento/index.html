@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estacionamento</title>
+</head>
+<body>
+
+    <h2>Cadastrar Veículo</h2>
+    <input id="placa" placeholder="Placa">
+    <input id="modelo" placeholder="Modelo">
+    <input id="cor" placeholder="Cor">
+    <input id="ano" placeholder="Ano">
+
+    <select id="tipo">
+        <option value="carro">Carro</option>
+        <option value="moto">Moto</option>
+        <option value="caminhao">Caminhão</option>
+    </select>
+
+    <input id="eixo" placeholder="Qtd Eixos (só caminhão)">
+
+    <button onclick="cadastrarVeiculo()">Cadastrar</button>
+
+    <hr>
+
+    <h2>Entrada</h2>
+    <input id="placaEntrada" placeholder="Placa">
+    <button onclick="registroEntrada()">Registrar Entrada</button>
+
+    <h2>Saída</h2>
+    <input id="placaSaida" placeholder="Placa">
+    <button onclick="registroSaida()">Registrar Saída</button>
+
+    <hr>
+
+    <button onclick="listarAtuais()">Listar Veículos Atuais</button>
+    <button onclick="listarHistorico()">Listar Histórico</button>
+
+    <pre id="saida"></pre>
+
+    <script src="funcionalidades.js"></script>
+</body>
+</html>

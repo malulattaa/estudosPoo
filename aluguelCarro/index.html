@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aluguel de Carros</title>
+</head>
+<body>
+
+<h2>Cadastrar veículo</h2>
+<input id="placa" placeholder="Placa">
+<input id="modelo" placeholder="Modelo">
+<select id="tipo">
+    <option value="popular">Popular</option>
+    <option value="suv">SUV</option>
+    <option value="luxo">Luxo</option>
+</select>
+<button onclick="cadastrarVeiculo()">Cadastrar</button>
+
+<hr>
+
+<h2>Alugar veículo</h2>
+<input id="placaAlugar" placeholder="Placa">
+<button onclick="alugar()">Alugar</button>
+
+<h2>Devolver veículo</h2>
+<input id="placaDevolver" placeholder="Placa">
+<button onclick="devolver()">Devolver</button>
+
+<hr>
+
+<button onclick="listarDisponiveis()">Veículos disponíveis</button>
+<button onclick="listarHistorico()">Histórico</button>
+
+<pre id="saida"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>

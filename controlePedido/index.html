@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Lanchonete</title>
+</head>
+<body>
+    <section>
+        <h2>Novo Pedido</h2>
+        <input type="text" id="numero" placeholder="Número do Pedido"><br>
+        <input type="text" id="cliente" placeholder="Nome do Cliente"><br>
+        <h3>Adicionar Item</h3>
+        <input type="text" id="item" placeholder="Item"><br>
+        <button onclick="adicionarItem()">Adicionar Item</button>
+        <button onclick="fazerPedido()">Fazer Pedido</button>
+    </section>
+
+    <section>
+        <h2>Finalizar Pedido</h2>
+        <input type="text" id="numeroFinalizar" placeholder="Número do Pedido"><br>
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </section>
+
+    <section>
+        <h2>Relatórios</h2>
+        <button onclick="listarAbertos()">Listar Pedidos Abertos</button>
+        <button onclick="listarHistorico()">Listar Histórico de Pedidos</button>
+        <pre id="saida"></pre>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

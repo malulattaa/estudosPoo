@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h2>Cadastrar Passageiro</h2>
+    <input id="nome" placeholder="Nome"><br>
+    <input id="doc" placeholder="Documento"><br>
+    <button onclick="cadastrarPassageiro()">Cadastrar</button>
+
+    <h2>Viagem</h2>
+    <input id="docMov" placeholder="Documento"><br>
+    <button onclick="embarcar()">Embarcar</button>
+    <button onclick="desembarcar()">Desembarcar</button>
+
+    <h2>Relatórios</h2>
+    <button onclick="listarAtuais()">No Ônibus</button>
+    <button onclick="listarHistorico()">Histórico</button>
+
+    <pre id="saida"></pre>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
